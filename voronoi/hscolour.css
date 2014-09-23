@@ -1,0 +1,9 @@
+* {
+  color: white;
+  background-color: black;
+}
+.hs-keyglyph, .hs-layout {color: teal;}
+.hs-keyword {color: green;}
+.hs-comment, .hs-comment a {color: green;}
+.hs-str, .hs-chr {color: teal;}
+.hs-keyword, .hs-conid, .hs-varid, .hs-conop, .hs-varop, .hs-num, .hs-cpp, .hs-sel, .hs-definition {}

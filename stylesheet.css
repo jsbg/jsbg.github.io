@@ -1,0 +1,131 @@
+html {
+  overflow-y: scroll;
+  background-color: black;
+  font-family: Courier;
+  color: white;
+}
+
+a:link {
+  color: white;
+  text-decoration: none;
+}
+a:visited div {
+  color: white;
+}
+div {
+  display: block;
+}
+h1 {
+  font-size: 5em;
+  text-align: center;
+}
+h2 {
+  font-size: 2em;
+}
+h3 {
+  font-size: 1.5em;
+  font-weight: normal;
+}
+h4 {
+  font-size: 1em;
+  font-weight: normal;
+  text-indent: 1em;
+}
+h5 {
+  font-size: 0.75em;
+  font-weight: normal;
+}
+h6 {
+  color: white;
+  font-size: 0.75em;
+  text-align: center;
+  margin-top: -5em;
+  font-weight: normal;
+}
+p {
+  position: relative;
+  margin-top: 45px;
+  background-color:rgba(0, 0, 0, 0);
+}
+ul {
+  list-style-type: none;
+  font-weight: normal;
+}
+#menu {
+  margin: auto;
+  text-align: center;
+}
+.menuitem:hover {
+  color: white;
+  border: solid white 3px;
+  vertical-align: middle;
+  position: relative;
+  display: inline-block;
+  height: 110px;
+  width: 110px;
+  border-radius: 100%;
+  text-align: center;
+  margin: 10px;
+}
+.menuitem {
+  border: dashed white 3px;
+  vertical-align: middle;
+  position: relative;
+  display: inline-block;
+  height: 110px;
+  width: 110px;
+  border-radius: 100%;
+  text-align: center;
+  margin: 10px;
+}
+.selected {
+  border: solid #55ff77 3px;
+  vertical-align: middle;
+  position: relative;
+  display: inline-block;
+  height: 110px;
+  width: 110px;
+  border-radius: 100%;
+  text-align: center;
+  margin: 10px;
+}
+.choice {
+  top: -8em;
+  transition: top 0.2s;
+}
+.degree a {
+  color: #5577ff;
+}
+.moreinfo a {
+  color: #5577ff;
+}
+.info {
+  display: none;
+  text-align: left;
+}
+.courses {
+  display: none;
+}
+.position {
+  font-size: 3em;
+}
+.infop {
+  display: none;
+  text-align: left;
+  position: relative;
+  font-weight: normal;
+  text-indent: 1em;
+}
+.link {
+  color: #5577ff;
+  text-decoration: underline;
+}
+#iframe {
+  display: none;
+}
+#cooking {
+  display: none;
+}
+#projects {
+  display: none;
+}

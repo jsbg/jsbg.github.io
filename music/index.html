@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+  <script>
+    $(".moreinfo").on("click", function(event) {
+      $(this).find(".info").slideToggle();
+      $(this).find(".infop").slideToggle();
+      event.preventDefault();
+    });
+    $(".link").on("click", function(event) {
+      event.stopPropagation();
+    });
+    $("#ouch").on("click", function() {
+      if(document.getElementById("ouchm").paused) {
+        document.getElementById("ouchm").play();
+      }
+      else {
+        document.getElementById("ouchm").pause();
+      }
+    });
+    $("#antieros").on("click", function() {
+      if(document.getElementById("antierosm").paused) {
+        document.getElementById("antierosm").play();
+      }
+      else {
+        document.getElementById("antierosm").pause();
+      }
+    });
+    $("#late").on("click", function() {
+      if(document.getElementById("latem").paused) {
+        document.getElementById("latem").play();
+      }
+      else {
+        document.getElementById("latem").pause();
+      }
+    });
+    $("#soy").on("click", function() {
+      if(document.getElementById("soym").paused) {
+        document.getElementById("soym").play();
+      }
+      else {
+        document.getElementById("soym").pause();
+      }
+    });
+    $("#jean").on("click", function() {
+      if(document.getElementById("jeanm").paused) {
+        document.getElementById("jeanm").play();
+      }
+      else {
+        document.getElementById("jeanm").pause();
+      }
+    });
+    $("#handson").on("click", function() {
+      if(document.getElementById("handsonm").paused) {
+        document.getElementById("handsonm").play();
+      }
+      else {
+        document.getElementById("handsonm").pause();
+      }
+    });
+    $("#hotel").on("click", function() {
+      if(document.getElementById("hotelm").paused) {
+        document.getElementById("hotelm").play();
+      }
+      else {
+        document.getElementById("hotelm").pause();
+      }
+    });
+  </script>
+  <p>I used to like making music a lot:</p>
+  <ul>
+    <li class="moreinfo" id="ouch">
+      <audio id="ouchm"><source src="music/ouch.ogg" type="audio/ogg"></audio>
+      <a href="#">Ouch</a>
+      <p class="infop">My favourite. It's a bit of a technical &eacute;tude.</p></li>
+    <li class="moreinfo" id="antieros">
+      <audio id="antierosm"><source src="music/antieros.ogg" type="audio/ogg"></audio>
+      <a href="#">Anti-Eros</a>
+      <p class="infop">This one is more experimental; I sampled only mechanical objects.</p></li>
+    <li class="moreinfo" id="late">
+      <audio id="latem"><source src="music/late.ogg" type="audio/ogg"></audio>
+      <a href="#">It's Late, The Time</a>
+      <p class="infop">I wanted to make a reggae/dub piece. The interlude in the middle is me going to the bank. The bit about cowboys is from a Hank Williams documentary.</p>
+    </li>
+    <li class="moreinfo" id="soy">
+      <audio id="soym"><source src="music/soy.ogg" type="audio/ogg"></audio>
+      <a href="#">Soy</a>
+      <p class="infop">In retrospect, the bass drum and snare hit pretty hard here. The ending is me making myself some tea.</p>
+    </li>
+    <li class="moreinfo" id="handson"><audio id="handsonm"><source src="music/handson.ogg" type="audio/ogg"></audio><a href="#">Hands On</a>
+    <p class="infop">For this I sampled <span class="link"><a href="https://www.youtube.com/watch?v=vZZngTkp54I" target="_blank">She's Gone</a></span> by Hall and Oates. I actually fed the output from my soundcard playing the YouTube video back into itself in a pinch to show a friend how I make music. I ended up liking the result and kept it. Again the harder BD and snare, especially for such a slow tempo, make this sound a bit more dated than I would like.</p></li>
+    <li class="moreinfo" id="jean"><audio id="jeanm"><source src="music/jean.ogg" type="audio/ogg"></audio><a href="#">Jean</a>
+    <p class="infop">Dolly Parton meets Herbie Hancock.</p></li>
+    <li class="moreinfo" id="hotel"><audio id="hotelm"><source src="music/hotel.ogg" type="audio/ogg"></audio><a href="#">Hotel</a>
+    <p class="infop">Serge Gainsbourg sample. There was always something that bugged me about this one but I could never fix it.<p></li>
+</html>
