@@ -9,87 +9,114 @@
     $(".link").on("click", function(event) {
       event.stopPropagation();
     });
+    $(".playbutton").on("click", function(event) {
+      event.stopPropagation();
+    });
     $("#ouch").on("click", function() {
       if(document.getElementById("ouchm").paused) {
         document.getElementById("ouchm").play();
+        $(this).text("PAUSE");
       }
       else {
         document.getElementById("ouchm").pause();
+        $(this).text("PLAY");
       }
     });
     $("#antieros").on("click", function() {
       if(document.getElementById("antierosm").paused) {
         document.getElementById("antierosm").play();
+        $(this).text("PAUSE");
       }
       else {
         document.getElementById("antierosm").pause();
+        $(this).text("PLAY");
       }
     });
     $("#late").on("click", function() {
       if(document.getElementById("latem").paused) {
         document.getElementById("latem").play();
+        $(this).text("PAUSE");
       }
       else {
         document.getElementById("latem").pause();
+        $(this).text("PLAY");
       }
     });
     $("#soy").on("click", function() {
       if(document.getElementById("soym").paused) {
         document.getElementById("soym").play();
+        $(this).text("PAUSE");
       }
       else {
         document.getElementById("soym").pause();
+        $(this).text("PLAY");
       }
     });
     $("#jean").on("click", function() {
       if(document.getElementById("jeanm").paused) {
         document.getElementById("jeanm").play();
+        $(this).text("PAUSE");
       }
       else {
         document.getElementById("jeanm").pause();
+        $(this).text("PLAY");
       }
     });
     $("#handson").on("click", function() {
       if(document.getElementById("handsonm").paused) {
         document.getElementById("handsonm").play();
+        $(this).text("PAUSE");
       }
       else {
         document.getElementById("handsonm").pause();
+        $(this).text("PLAY");
       }
     });
     $("#hotel").on("click", function() {
       if(document.getElementById("hotelm").paused) {
         document.getElementById("hotelm").play();
+        $(this).text("PAUSE");
       }
       else {
         document.getElementById("hotelm").pause();
+        $(this).text("PLAY");
       }
     });
   </script>
   <p>I used to like making music a lot:</p>
   <ul>
-    <li class="moreinfo" id="ouch">
+    <li class="moreinfo">
       <audio id="ouchm"><source src="music/ouch.ogg" type="audio/ogg"></audio>
       <a href="#">Ouch</a>
+      <span class="playbutton" id="ouch">PLAY</span>
       <p class="infop">My favourite. It's a bit of a technical &eacute;tude.</p></li>
-    <li class="moreinfo" id="antieros">
+    <li class="moreinfo">
       <audio id="antierosm"><source src="music/antieros.ogg" type="audio/ogg"></audio>
       <a href="#">Anti-Eros</a>
+      <span class="playbutton" id="antieros">PLAY</span>
       <p class="infop">This one is more experimental; I sampled only mechanical objects.</p></li>
-    <li class="moreinfo" id="late">
+    <li class="moreinfo">
       <audio id="latem"><source src="music/late.ogg" type="audio/ogg"></audio>
       <a href="#">It's Late, The Time</a>
+      <span class="playbutton" id="late">PLAY</span>
       <p class="infop">I wanted to make a reggae/dub piece. The interlude in the middle is me going to the bank. The bit about cowboys is from a Hank Williams documentary.</p>
     </li>
-    <li class="moreinfo" id="soy">
+    <li class="moreinfo">
       <audio id="soym"><source src="music/soy.ogg" type="audio/ogg"></audio>
       <a href="#">Soy</a>
+      <span class="playbutton" id="soy">PLAY</span>
       <p class="infop">In retrospect, the bass drum and snare hit pretty hard here. The ending is me making myself some tea.</p>
     </li>
-    <li class="moreinfo" id="handson"><audio id="handsonm"><source src="music/handson.ogg" type="audio/ogg"></audio><a href="#">Hands On</a>
+    <li class="moreinfo"><audio id="handsonm"><source src="music/handson.ogg" type="audio/ogg"></audio>
+    <a href="#">Hands On</a>
+    <span class="playbutton" id="handson">PLAY</span>
     <p class="infop">For this I sampled <span class="link"><a href="https://www.youtube.com/watch?v=vZZngTkp54I" target="_blank">She's Gone</a></span> by Hall and Oates. I actually fed the output from my soundcard playing the YouTube video back into itself in a pinch to show a friend how I make music. I ended up liking the result and kept it. Again the harder BD and snare, especially for such a slow tempo, make this sound a bit more dated than I would like.</p></li>
-    <li class="moreinfo" id="jean"><audio id="jeanm"><source src="music/jean.ogg" type="audio/ogg"></audio><a href="#">Jean</a>
+    <li class="moreinfo"><audio id="jeanm"><source src="music/jean.ogg" type="audio/ogg"></audio>
+    <a href="#">Jean</a>
+    <span class="playbutton" id="jean">PLAY</span>
     <p class="infop">Dolly Parton meets Herbie Hancock.</p></li>
-    <li class="moreinfo" id="hotel"><audio id="hotelm"><source src="music/hotel.ogg" type="audio/ogg"></audio><a href="#">Hotel</a>
+    <li class="moreinfo"><audio id="hotelm"><source src="music/hotel.ogg" type="audio/ogg"></audio>
+    <a href="#">Hotel</a>
+    <span class="playbutton" id="hotel">PLAY</span>
     <p class="infop">Serge Gainsbourg sample. There was always something that bugged me about this one but I could never fix it.<p></li>
 </html>
