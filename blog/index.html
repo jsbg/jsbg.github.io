@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+  <script>
+    $("#uncount").on("click", function(e) {
+      $("#post").fadeOut(100);
+      setTimeout(function() {
+        $("#post").load("blog/uncount.html", function() {
+          $("#post").fadeIn(100);
+        });
+      }, 100);
+    });
+  </script>
+  <div>
+    <span class="posts" id="uncount"><a href="#">REAL NUMBERS</a></span>
+  </div>
+  <div id="post"></div>
+</html>
