@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script type="text/x-mathjax-config">
+      MathJax.Hub.Config({
+        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
+      });
+    </script>
+    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+  </head>
+  <body>
+    <p>What's $i^i$? Well, it's a real number, equal to $\frac{1}{\sqrt{e^\pi}}$. But how does one even get this? We can use geometry!</p>
+    <p>Complex numbers are numbers of the form $a+bi$, where $i$ is defined to be equal to $\sqrt{-1}$. They can be written $(a,b)$, just like any point in $\mathbb{R}^2$, where $a$ is the <em>real part</em> and $b$ is the <em>imaginary part</em>. This geometric representation of the complex numbers is called the complex plane: the $x$ axis represents the real part and the $y$ axis represents the imaginary part. So the point $(2,0)$ is the real number 2, and the point $(1,1)$ is the number $1+i$.</p>
+    <p>Suppose that we have a circle of radius 1 centred at the origin in the complex plane. Then any point on the circle is given by $\cos\theta+i\sin\theta$. This is equal to $e^{i\theta}$. One way to see this is to take the Taylor series
+    \[
+      \cos{x}=1-\frac{x^2}{2!}+\frac{x^4}{4!}-\dots
+    \]
+    and
+    \[
+      i\sin{x}=ix-\frac{ix^3}{3!}+\frac{ix^5}{5!}-\dots.
+    \]
+    Then the series
+    \[
+      e^{ix}=1+ix-\frac{x^2}{2!}-\frac{ix^3}{3!}+\dots
+    \]
+    is clearly the sum of the last two.</p>
+    <p>Now the number $i$ is the point $(0,1)$, which is at 90 degrees, or $\frac{\pi}{2}$ radians, on the circle. Thus $i$ can be written as $e^{i\frac{\pi}{2}}$. Then
+    \begin{align*}
+      i^i&=\left(e^{i\frac{\pi}{2}}\right)^i\\
+      &=e^{-\frac{\pi}{2}}\\
+      &=\frac{1}{\sqrt{e^\pi}},
+    \end{align*}
+    a real number!
+  </body>
+</html>
