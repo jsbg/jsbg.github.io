@@ -24,6 +24,14 @@ $(document).ready(function() {
       });
     }, 100);
   });
+  $("#blog").on("click", function(e) {
+    $("#iframe").fadeOut(100);
+    setTimeout(function() {
+      $("#iframe").load("blog/index.html", function() {
+        $("#iframe").fadeIn(100);
+      });
+    }, 100);
+  });
   $("#contact").on("click", function(e) {
     $("#iframe").fadeOut(100);
     setTimeout(function() {
