@@ -120,11 +120,17 @@ ul {
   color: #5577ff;
   text-decoration: underline;
 }
+.posts a {
+  color: white;
+}
 #iframe {
   display: none;
 }
 #cooking {
   display: none;
+}
+#post {
+  /*display: none;*/
 }
 #projects {
   display: none;
