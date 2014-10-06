@@ -51,9 +51,15 @@ ul {
   list-style-type: none;
   font-weight: normal;
 }
-#menu {
-  margin: auto;
-  text-align: center;
+.choice {
+  top: -8em;
+  transition: top 0.2s;
+}
+.degree a {
+  color: #5577ff;
+}
+.moreinfo a {
+  color: #5577ff;
 }
 .menuitem:hover {
   color: white;
@@ -89,16 +95,6 @@ ul {
   text-align: center;
   margin: 10px;
 }
-.choice {
-  top: -8em;
-  transition: top 0.2s;
-}
-.degree a {
-  color: #5577ff;
-}
-.moreinfo a {
-  color: #5577ff;
-}
 .info {
   display: none;
   text-align: left;
@@ -123,11 +119,18 @@ ul {
 .posts a {
   color: white;
 }
+.posts_curr a {
+  color: #55ff77;
+}
 #iframe {
   display: none;
 }
 #cooking {
   display: none;
+}
+#menu {
+  margin: auto;
+  text-align: center;
 }
 #post {
   /*display: none;*/
