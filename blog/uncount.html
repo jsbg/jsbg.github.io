@@ -1,13 +1,5 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <script type="text/x-mathjax-config">
-      MathJax.Hub.Config({
-        tex2jax: {inlineMath: [['$','$'], ['\\(','\\)']]}
-      });
-    </script>
-    <script type="text/javascript" src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
-  </head>
   <body>
     <p>A set is said to be countable (or countably infinite) if there is a bijection (one-to-one correspondance) between its elements and the natural numbers. For example, the integers $\mathbb{Z}$ are countable because we can assign the following mapping from $\mathbb{N}$:</p>
     \[
@@ -34,5 +26,8 @@
     \]
     <p>A countable union of finite sets is countable, and the result follows.</p>
     <p>A popular example in probability for something that is counterintuitive is related to this. Suppose that you have a dart board. What's the probability that a dart lands on any specific point? It must be zero! Otherwise, suppose that it's some small number $\epsilon$. There are infinitely many points on the board, so the probability of hitting the board anywhere is $\epsilon\cdot\infty=\infty$. This makes no sense, since probabilities are between 0 and 1. So when dealing with continuous domains (the real numbers), it only makes sense to ask things like what's the probability that a dart will land in the upper half of the board.</p>
+    <script type="text/javascript">
+      MathJax.Hub.Queue(["Typeset",MathJax.Hub]);
+    </script>
   </body>
 </html>

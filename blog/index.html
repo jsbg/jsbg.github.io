@@ -1,32 +1,37 @@
 <!DOCTYPE html>
 <html>
-  <script>
-    $("#uncount").on("click", function(e) {
-      $("#post").fadeOut(100);
-      setTimeout(function() {
-        $("#post").load("blog/uncount.html", function() {
-          $("#post").fadeIn(100);
-        });
-      }, 100);
-    });
-    $("#itothei").on("click", function(e) {
-      $("#post").fadeOut(100);
-      setTimeout(function() {
-        $("#post").load("blog/itothei.html", function() {
-          $("#post").fadeIn(100);
-        });
-      }, 100);
-    });
-    $(".posts").on("click", function(event) {
-      $(".posts_curr").not(this).each(function() {
-        $(this).removeClass("posts_curr").addClass("posts");
+  <head>
+    <script>
+      $("#uncount").on("click", function(e) {
+        $("#post").fadeOut(100);
+        setTimeout(function() {
+          $("#post").load("blog/uncount.html", function() {
+            $("#post").fadeIn(100);
+          });
+        }, 100);
       });
-      $(this).removeClass("posts").addClass("posts_curr");
-      event.preventDefault();
-    });
-  </script>
-  <div>
-    <span class="posts" id="uncount"><a href="#">REAL NUMBERS</a></span>|<span class="posts" id="itothei"><a href="#">i<sup>i</sup></a></span>
-  </div>
-  <div id="post"></div>
+      $("#itothei").on("click", function(e) {
+        $("#post").fadeOut(100);
+        setTimeout(function() {
+          $("#post").load("blog/itothei.html", function() {
+            $("#post").fadeIn(100);
+          });
+        }, 100);
+      });
+      $(".posts").on("click", function(event) {
+        $(".posts_curr").not(this).each(function() {
+          $(this).removeClass("posts_curr").addClass("posts");
+        });
+        $(this).removeClass("posts").addClass("posts_curr");
+        event.preventDefault();
+      });
+    </script>
+  </head>
+  <body>
+    <div>
+      <span class="posts" id="uncount"><a href="#">REAL NUMBERS</a></span>|
+      <span class="posts" id="itothei"><a href="#">i<sup>i</sup></a></span>
+    </div>
+    <div id="post"></div>
+  </body>
 </html>
