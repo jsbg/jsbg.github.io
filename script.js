@@ -11,7 +11,7 @@ $(document).ready(function() {
   $("#cv").on("click", function(e) {
     $("#iframe").fadeOut(100);
     setTimeout(function() {
-      $("#iframe").load("resume/resume.html", function() {
+      $("#iframe").load("resume/index.html", function() {
         $("#iframe").fadeIn(100);
       });
     }, 200);
