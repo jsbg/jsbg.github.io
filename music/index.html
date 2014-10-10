@@ -82,6 +82,16 @@
         $(this).text("PLAY");
       }
     });
+    $("#dnbp").on("click", function() {
+      if(document.getElementById("dnbpm").paused) {
+        document.getElementById("dnbpm").play();
+        $(this).text("PAUSE");
+      }
+      else {
+        document.getElementById("dnbpm").pause();
+        $(this).text("PLAY");
+      }
+    });
   </script>
   <p>I used to like making music a lot:</p>
   <ul>
@@ -118,5 +128,10 @@
     <li class="moreinfo"><audio id="hotelm"><source src="music/hotel.ogg" type="audio/ogg"></audio>
     <a href="#">Hotel</a>
     <span class="playbutton" id="hotel">PLAY</span>
-    <p class="infop">Serge Gainsbourg sample. There was always something that bugged me about this one but I could never fix it.<p></li>
+    <p class="infop">Serge Gainsbourg sample. There was always something that bugged me about this one but I could never fix it.</p></li>
+    <li class="moreinfo"><audio id="dnbpm"><source src="music/dnbp.ogg" type="audio/ogg"></audio>
+    <a href="#">D&B track</a>
+    <span class="playbutton" id="dnbp">PLAY</span>
+    <p class="infop">Collaboration with Mike. I was working on some drum &amp; bass drums and he called me up looking to make some music. He made pretty much all of the rest on my Juno 106.<p></li>
+  </ul>
 </html>
