@@ -3,26 +3,32 @@ html {
   background-color: black;
   font-family: Courier;
 }
+
 h1 {
   font-size: 5em;
   text-align: center;
 }
+
 h2 {
   font-size: 2em;
 }
+
 h3 {
   font-size: 1.5em;
   font-weight: normal;
 }
+
 h4 {
   font-size: 1em;
   font-weight: normal;
   text-indent: 1em;
 }
+
 h5 {
   font-size: 0.75em;
   font-weight: normal;
 }
+
 h6 {
   color: white;
   font-size: 0.75em;
@@ -30,37 +36,47 @@ h6 {
   margin-top: -5em;
   font-weight: normal;
 }
-.moreinfo {
+
+a {
+  color: #5577ff;
 }
-.info {
-  display: none;
-  text-align: left;
-}
-.courses {
-  display: none;
-}
-.position {
-  font-size: 3em;
-}
+
 a:link {
   text-decoration: none;
 }
+
 ul {
   list-style-type: none;
   font-weight: normal;
 }
-a {
-  color: #5577ff;
-}
+
 p {
   position: relative;
   font-family: Courier;
   font-weight: normal;
   text-indent: 1em;
 }
+
+.moreinfo {
+}
+
+.info {
+  display: none;
+  text-align: left;
+}
+
+.courses {
+  display: none;
+}
+
+.position {
+  font-size: 3em;
+}
+
 .link {
   text-decoration: underline;
 }
+
 .tex sub, .latex sub, .latex sup {
   text-transform: uppercase;
 }
@@ -70,6 +86,7 @@ p {
   margin-left: -0.1667em;
   margin-right: -0.125em;
 }
+
 .latex sup {
   font-size: 0.85em;
   vertical-align: 0.15em;
