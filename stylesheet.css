@@ -9,6 +9,9 @@ a:link {
   color: white;
   text-decoration: none;
 }
+a:visited {
+  color: #777777;
+}
 a:visited div {
   color: white;
 }
