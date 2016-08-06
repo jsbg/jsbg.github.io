@@ -35,8 +35,8 @@ $(document).ready(function() {
   $("#contact").on("click", function(e) {
     $("#iframe").fadeOut(100);
     setTimeout(function() {
-      var em1 = "mailto:js.b.gir";
-      var em2 = "ouard@gmail.com";
+      var em1 = "mailto:jssbbbggg";
+      var em2 = "g@gmail.com";
       $("#iframe").html('<p>You can reach me <a href="' + em1 + em2 + '"><span class="link">here</span></a>. I\'m also on <a href="http://ca.linkedin.com/in/jsbgir/" target="_blank"><span class="link">LinkedIn</span></a>.</p>')
       $("#iframe").fadeIn(100);
     }, 100);
